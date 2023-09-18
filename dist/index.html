@@ -10,13 +10,20 @@
 <body>
 
   <!--NavBar-->
-  <nav class="relative container mx-auto p-6 bg-gray-300">
+  <nav class="relative container mx-auto p-6">
     <!--Flex Container-->
     <div class="flex items-center justify-between">
+      <!--Logo-->
       <div class="pt-2">
         <img src="Legacy Logo Final.png" alt="Legacy Electrical logo" />
       </div>
-      <div class="hidden text-xl md:flex space-x-6">
+      <!--Company info-->
+      <div class="text-3xl font-bold sm:hidden">
+        <p>860-604-9325</p>
+      </div>
+
+      <!--Nav Menu-->
+      <div class="hidden text-3xl font-bold md:flex space-x-6">
         <a href="About" class="hover:text-gray-500">About</a>
         <a href="Services" class="hover:text-gray-500">Services</a>
         <a href="Contact" class="hover:text-gray-500">Contact</a>
@@ -32,7 +39,7 @@
 
     <!--Mobile Menu-->
     <div class="md:hidden">
-      <div id="menu" class="absolute flex-col items-centered hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+      <div id="menu" class="absolute flex-col items-centered hidden self-end py-8 mt-10 space-y-6 font-bold text-lg bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
@@ -43,46 +50,37 @@
   <!--Hero Section-->
   <section id="hero">
     <!--Flex Container-->
-    <div class="container flex flex-col-reverse md:flex-row items-centered px-6 mt-10 mx-auto space-y-0 md:space-y-0">
+    <div class="container flex flex-col text-center justify-between px-6 mt-10 mx-auto space-y-0 md:space-y-0">
 
     <!--Heading & Subtext-->
-      <div class="flex flex-col mx-32 space-y-12 md:w-1/2">
-        <h1 class="max-w-md text-4xl font-bold text-center mt-10 md:text-5xl md:text-left">
+      <div class="flex flex-col mx-auto space-y-12">
+        <h1 class="max-w-l text-4xl font-bold mx-auto text-center justify-between mt-5 md:text-5xl">
        No Problems, Only Solutions!
         </h1>
-          <p class="max-w-sm text-center text-gray-500">
+          <p class="max-w-md text-center mx-auto justify-between text-gray-500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellendus modi nulla ipsum aliquid officia expedita cum, nesciunt praesentium dolores nobis rem. Minus aperiam delectus omnis autem qui ad quaerat!
           </p>
       
     <!--Hero Images-->
-      <div class="md-1/2">
+      <div class="bg-local">
         <img src="pexels-max-rahubovskiy-7533757.jpg" alt="">
       </div>
-
-      <!--CTA Button-->
-      <div class="flex justify-center md:justify-start">
-        <a href="mailto:tayler@legacyelectricalct.com" class="p-3 px-6 pt-2 text-center text-white bg-amber-500 rounded-md baseline hover:bg-yellow-400">Contact Us</a>
-      </div>
-    </div>
   </section>
 
   <!--Features Section-->
   <section id="features">
     <!--Flex Container-->
-    <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+    <div class="container flex flex-col px-4 mx-auto items-center mt-5 space-y-12 md:space-y-0 ">
 
       <!--Why Choose Us-->
-      <div class="flex flex-col space-y-12 md:w-1/2">
-        <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+      <div class="flex flex-col space-y-6">
+        <h2 class="max-w-md text-4xl font-bold text-center py-6 mb-5">
           Why Choose Legacy Electrical?
         </h2>
-        <p class="max-w-s text-center text-gray-500 md:text-left">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis itaque, tempora modi vel atque ea hic sit delectus ipsam, iste quia. Harum earum nisi, perferendis nobis sapiente nam ex odit!
-        </p>
       </div>
 
       <!--Numbered List-->
-      <div class="flex flex-col space-y-8 md:w-1/2">
+      <div class="flex flex-col space-y-8 md:1/2">
 
         <!--List Items-->
 
@@ -153,33 +151,34 @@
       <!--Container to Form-->
       <div class="max-w-screen-md mx-auto p-5">
         <div class="text-center mt-5 mb-10">
-            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+            <h3 class="text-3xl mb-5 sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
               Get A <span class="text-amber-500">Quote</span>
             </h3>
             <p>Please complete and submit the form below, including a brief description of your project or service request.</p>
         </div>
         
-        <form class="w-full">
+        <form class="w-full" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="43a560b2-da27-4999-be3d-fb3a4b2a44f7">
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
               First Name
             </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="first" id="first" type="text">
           </div>
 
           <div class="w-full md:w-1/2 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
               Last Name
             </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="last" id="last" type="text">
           </div>
 
           <div class="w-full md:w-1/2 my-3 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-phone-number">
               Phone Number
             </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-phone-number" type="text" placeholder="8605555555">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="phone" id="phone" type="text">
           </div>
         </div>
 
@@ -188,7 +187,7 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
               Email Address
             </label>
-            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="********@*****.**">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" id="email" type="email">
           </div>
         </div>
           
@@ -197,7 +196,7 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
               Your Message
             </label>
-            <textarea rows="10" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" type="message">
+            <textarea rows="10" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" id="message" type="message">
             </textarea>
           </div>
             <button class="shadow bg-amber-500 hover:bg-amber-400 focus:shadow-outline focus:outline-none text-white font-bold mx-3 py-2 px-6 rounded" type="submit">
